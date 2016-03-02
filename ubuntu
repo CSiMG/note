@@ -1,0 +1,17 @@
+复制文件，文件夹加上-r，表示递归复制文件夹中的文件
+cp source_filename destinate_directory
+
+安装deb包
+dpkg -i <package.deb>
+移除一个已安装的deb包（包括配置文件）
+dpkg -P <package>
+移除一个deb包
+dpkg -r <package>
+
+
+SSH远程登入Ubuntu主机
+ssh remote_Ubuntu_username@remote_Ubuntu_ip
+将文件/文件夹从远程Ubuntu机拷至本地(scp)
+scp -r remote_Ubuntu_username@remote_Ubuntu_ip:directory
+将文件/文件夹从本地拷至远程Ubuntu机(scp)
+scp -r local_file remote_Ubuntu_username@remote_Ubuntu_ip:directory
